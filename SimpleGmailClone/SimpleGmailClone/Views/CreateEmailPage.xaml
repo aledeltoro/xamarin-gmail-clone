@@ -22,10 +22,10 @@
             <Entry
                 Grid.Row="0"
                 Grid.Column="1"
+                Grid.ColumnSpan="4"
                 TextTransform="Lowercase"
                 Keyboard="Email"
-                Text="alejandroencarnacion1@gmail.com"
-                IsReadOnly="True"/>
+                Text="{Binding From}"/>
 
             <Label
                 Grid.Row="1"
@@ -35,20 +35,21 @@
             <Entry
                 Grid.Row="1"
                 Grid.Column="1"
+                Grid.ColumnSpan="4"
                 TextTransform="Lowercase"
                 Keyboard="Email"
-                Text="{Binding Receiver}"/>
+                Text="{Binding To}"/>
 
             <Entry
                 Grid.Row="2"
-                Grid.ColumnSpan="2"
+                Grid.ColumnSpan="5"
                 Placeholder="Subject"
                 Keyboard="Text"
                 Text="{Binding Subject}"/>
 
             <Editor
                 Grid.Row="3"
-                Grid.ColumnSpan="2"
+                Grid.ColumnSpan="5"
                 Placeholder="Compose email"
                 Keyboard="Text"
                 Text="{Binding Body}"/>

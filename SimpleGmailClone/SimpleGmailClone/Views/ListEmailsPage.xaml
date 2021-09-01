@@ -7,14 +7,16 @@
     <ContentPage.BindingContext>
         <viewModels:ListEmailsViewModel/>
     </ContentPage.BindingContext>
-    
+
     <Grid
         RowDefinitions="*, Auto">
-        
+
         <CollectionView 
             Grid.Row="0"
             ItemsSource="{Binding Emails}" 
-            ItemsLayout="VerticalList">
+            ItemsLayout="VerticalList"
+            SelectionMode="Single"
+            SelectedItem="{Binding SelectedEmail}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <SwipeView>
@@ -30,7 +32,7 @@
                             <Label
                             Grid.Row="0"
                             Grid.Column="1"
-                            Text="{Binding Receiver}"/>
+                            Text="{Binding From}"/>
 
                             <Label
                             Grid.Row="1"

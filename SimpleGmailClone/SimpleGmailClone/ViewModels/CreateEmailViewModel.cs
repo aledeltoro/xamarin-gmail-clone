@@ -14,7 +14,8 @@ namespace SimpleGmailClone.ViewModels
 
         public string Subject { get; set; }
         public string Body { get; set; }
-        public string Receiver { get; set; }
+        public string From { get; set; }
+        public string To { get; set; }
 
         public ICommand CreateEmailCommand { get; set; }
 
@@ -26,8 +27,7 @@ namespace SimpleGmailClone.ViewModels
 
         private async void CreateEmail()
         {
-            var newEmail = new Email(Subject, Body, Receiver);
-            _emails.Add(newEmail);
+            _emails.Add(new Email(From, To, Body, Subject));
             await App.Current.MainPage.Navigation.PopAsync();
         }
     }

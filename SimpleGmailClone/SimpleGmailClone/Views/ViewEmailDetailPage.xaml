@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:SimpleGmailClone.ViewModels"
+             x:DataType="viewmodels:ViewEmailDetailViewModel"
+             x:Class="SimpleGmailClone.Views.ViewEmailDetailPage">
+    <ContentPage.Content>
+        <Grid
+            RowDefinitions="Auto, Auto, Auto, Auto"
+            ColumnDefinitions="Auto, Auto">
+
+            <Label
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Text="{Binding SelectedEmail.Subject}"/>
+
+            <Image
+                Grid.Row="0"
+                Grid.ColumnSpan="3"
+                Source="icon_account_circle"/>
+
+            <Label
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="{Binding SelectedEmail.From}"/>
+
+            <Label
+                Grid.Row="1"
+                Grid.Column="1"
+                Text="{Binding SelectedEmail.To}"/>
+
+            <Label
+                Grid.Row="2"
+                Grid.Column="1"
+                Text="{Binding SelectedEmail.Date.DayOfWeek}"/>
+
+            <Label
+                Grid.Row="3"
+                Grid.ColumnSpan="2"
+                Text="{Binding SelectedEmail.Body}"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
