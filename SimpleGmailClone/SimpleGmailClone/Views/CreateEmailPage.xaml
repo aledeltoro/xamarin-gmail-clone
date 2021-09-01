@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:SimpleGmailClone.ViewModels" 
+             x:DataType="viewmodels:CreateEmailViewModel"
+             x:Class="SimpleGmailClone.Views.CreateEmailPage"
+             Title="Compose">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Command="{Binding CreateEmailCommand}" Text="Create"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <Grid
+            RowDefinitions="Auto, Auto, Auto, Auto"
+            ColumnDefinitions="Auto, Auto">
+
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="From"/>
+
+            <Entry
+                Grid.Row="0"
+                Grid.Column="1"
+                TextTransform="Lowercase"
+                Keyboard="Email"
+                Text="alejandroencarnacion1@gmail.com"
+                IsReadOnly="True"/>
+
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="To"/>
+
+            <Entry
+                Grid.Row="1"
+                Grid.Column="1"
+                TextTransform="Lowercase"
+                Keyboard="Email"
+                Text="{Binding Receiver}"/>
+
+            <Entry
+                Grid.Row="2"
+                Grid.ColumnSpan="2"
+                Placeholder="Subject"
+                Keyboard="Text"
+                Text="{Binding Subject}"/>
+
+            <Editor
+                Grid.Row="3"
+                Grid.ColumnSpan="2"
+                Placeholder="Compose email"
+                Keyboard="Text"
+                Text="{Binding Body}"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

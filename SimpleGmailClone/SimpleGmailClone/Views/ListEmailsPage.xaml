@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="SimpleGmailClone.Views.ListEmailsPage"
+             xmlns:viewModels="clr-namespace:SimpleGmailClone.ViewModels"
+             Title="Primary">
+    <ContentPage.BindingContext>
+        <viewModels:ListEmailsViewModel/>
+    </ContentPage.BindingContext>
+    
+    <Grid
+        RowDefinitions="*, Auto">
+        
+        <CollectionView 
+            Grid.Row="0"
+            ItemsSource="{Binding Emails}" 
+            ItemsLayout="VerticalList">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <SwipeView>
+                        <Grid 
+                        RowDefinitions="Auto, Auto, Auto"
+                        ColumnDefinitions="Auto, Auto, Auto">
+
+                            <Image 
+                            Grid.RowSpan="2"
+                            Grid.Column="0"
+                            Source="icon_account_circle"/>
+
+                            <Label
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Text="{Binding Receiver}"/>
+
+                            <Label
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Text="{Binding Subject}"/>
+
+                            <Label
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            Text="{Binding Body}"/>
+
+                            <Label
+                            Grid.Row="0"
+                            Grid.Column="4"
+                            Text="{Binding Date.DayOfWeek}"/>
+                        </Grid>
+                    </SwipeView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <ImageButton 
+            Grid.Row="1"
+            Source="icon_account_circle"
+            CornerRadius="20"
+            WidthRequest="80"
+            HeightRequest="80"  
+            VerticalOptions="End"
+            HorizontalOptions="End"
+            Command="{Binding NavigateToCreateEmailCommand}"
+            />
+    </Grid>
+
+
+</ContentPage>

@@ -1,6 +1,5 @@
-﻿using System;
+﻿using SimpleGmailClone.Views;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace SimpleGmailClone
 {
@@ -10,7 +9,9 @@ namespace SimpleGmailClone
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new ListEmailsPage()) {
+                BarBackgroundColor = Color.FromHex("#EA4335")
+            };
         }
 
         protected override void OnStart()
