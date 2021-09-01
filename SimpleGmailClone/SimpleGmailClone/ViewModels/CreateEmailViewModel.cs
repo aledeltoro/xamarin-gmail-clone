@@ -1,16 +1,15 @@
-﻿using SimpleGmailClone.Models;
-using System;
-using System.Collections.Generic;
+﻿using Newtonsoft.Json;
+using SimpleGmailClone.Models;
 using System.Collections.ObjectModel;
-using System.Text;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace SimpleGmailClone.ViewModels
 {
     public class CreateEmailViewModel : BaseViewModel
     {
-        private ObservableCollection<Email> _emails;
+        private ObservableCollection<Models.Email> _emails;
 
         public string Subject { get; set; }
         public string Body { get; set; }
@@ -19,7 +18,7 @@ namespace SimpleGmailClone.ViewModels
 
         public ICommand CreateEmailCommand { get; set; }
 
-        public CreateEmailViewModel(ObservableCollection<Email> emails)
+        public CreateEmailViewModel(ObservableCollection<Models.Email> emails)
         {
             _emails = emails;
             CreateEmailCommand = new Command(CreateEmail);
@@ -27,7 +26,11 @@ namespace SimpleGmailClone.ViewModels
 
         private async void CreateEmail()
         {
-            _emails.Add(new Email(From, To, Body, Subject));
+            _emails.Add(new Models.Email(From, To, Body, Subject));
+
+            var jsonString = JsonConvert.SerializeObject(_emails);
+            Preferences.Set("emails", jsonString);
+
             await App.Current.MainPage.Navigation.PopAsync();
         }
     }

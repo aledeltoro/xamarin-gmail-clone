@@ -1,25 +1,24 @@
-﻿using SimpleGmailClone.Models;
+﻿using Newtonsoft.Json;
+using SimpleGmailClone.Models;
 using SimpleGmailClone.Views;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace SimpleGmailClone.ViewModels
 {
     public class ListEmailsViewModel : BaseViewModel
     {
-        public ObservableCollection<Email> Emails { get; set; } = new ObservableCollection<Email>() {
-            new Email("test@gmail.com", "test@yahoo.com", "testing message", "Test"),
-            new Email("test@gmail.com", "test@yahoo.com", "testing message", "Test"),
-            new Email("test@gmail.com", "test@yahoo.com", "testing message", "Test"),
-        };
+        public ObservableCollection<Models.Email> Emails { get; set; } = new ObservableCollection<Models.Email>();
 
-        private Email _selectedEmail;
-        public Email SelectedEmail 
-        { 
+        private Models.Email _selectedEmail;
+        public Models.Email SelectedEmail
+        {
             get
             {
                 return _selectedEmail;
@@ -42,8 +41,10 @@ namespace SimpleGmailClone.ViewModels
         public ListEmailsViewModel()
         {
             NavigateToCreateEmailCommand = new Command(OnCreateEmail);
-            SelectedEmailCommand = new Command<Email>(OnEmailSelected);
-            DeleteEmailCommand = new Command<Email>(DeleteEmail);
+            SelectedEmailCommand = new Command<Models.Email>(OnEmailSelected);
+            DeleteEmailCommand = new Command<Models.Email>(DeleteEmail);
+
+            LoadEmails();
         }
 
         private async void OnCreateEmail()
@@ -51,14 +52,28 @@ namespace SimpleGmailClone.ViewModels
             await App.Current.MainPage.Navigation.PushAsync(new CreateEmailPage(Emails));
         }
 
-        private void DeleteEmail(Email email)
+        private void DeleteEmail(Models.Email email)
         {
             Emails.Remove(email);
+
+            var jsonString = JsonConvert.SerializeObject(Emails);
+            Preferences.Set("emails", jsonString);
         }
 
-        private async void OnEmailSelected(Email email)
+        private void LoadEmails()
         {
-           await App.Current.MainPage.Navigation.PushAsync(new ViewEmailDetailPage(email));
+            var emailListString = Preferences.Get("emails", null);
+
+            if (emailListString != null)
+            {
+                var emailList = JsonConvert.DeserializeObject<ObservableCollection<Models.Email>>(emailListString);
+                Emails = emailList;
+            }
+        }
+
+        private async void OnEmailSelected(Models.Email email)
+        {
+            await App.Current.MainPage.Navigation.PushAsync(new ViewEmailDetailPage(email));
         }
     }
 }
