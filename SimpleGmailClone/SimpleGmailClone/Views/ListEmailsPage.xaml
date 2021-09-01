@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="SimpleGmailClone.Views.ListEmailsPage"
              xmlns:viewModels="clr-namespace:SimpleGmailClone.ViewModels"
+             x:Name="EmailListPage"
              Title="Primary">
     <ContentPage.BindingContext>
         <viewModels:ListEmailsViewModel/>
@@ -20,6 +21,14 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <SwipeView>
+                        <SwipeView.RightItems>
+                            <SwipeItem 
+                                IconImageSource="icon_account_circle"
+                                Command="{Binding Source={x:Reference EmailListPage}, Path=BindingContext.DeleteEmailCommand}"
+                                CommandParameter="{Binding}"
+                                IsDestructive="True"
+                                BackgroundColor="Red"/>
+                        </SwipeView.RightItems>
                         <Grid 
                         RowDefinitions="Auto, Auto, Auto"
                         ColumnDefinitions="Auto, Auto, Auto">

@@ -36,17 +36,24 @@ namespace SimpleGmailClone.ViewModels
         }
 
         public ICommand NavigateToCreateEmailCommand { get; }
+        public ICommand DeleteEmailCommand { get; set; }
         public ICommand SelectedEmailCommand { get; set; }
 
         public ListEmailsViewModel()
         {
             NavigateToCreateEmailCommand = new Command(OnCreateEmail);
             SelectedEmailCommand = new Command<Email>(OnEmailSelected);
+            DeleteEmailCommand = new Command<Email>(DeleteEmail);
         }
 
         private async void OnCreateEmail()
         {
             await App.Current.MainPage.Navigation.PushAsync(new CreateEmailPage(Emails));
+        }
+
+        private void DeleteEmail(Email email)
+        {
+            Emails.Remove(email);
         }
 
         private async void OnEmailSelected(Email email)
