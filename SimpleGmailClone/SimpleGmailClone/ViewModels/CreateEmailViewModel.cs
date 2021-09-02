@@ -7,6 +7,7 @@ using System.IO;
 using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using System.Collections.Generic;
 
 namespace SimpleGmailClone.ViewModels
 {
@@ -19,7 +20,9 @@ namespace SimpleGmailClone.ViewModels
         public string From { get; set; }
         public string To { get; set; }
         public ImageSource Attachment { get; set; }
+        
         private string _base64Image { get; set; }
+        private string _attachmentPath { get; set; }
 
         public ICommand CreateEmailCommand { get; set; }
         public ICommand AttachPhotoCommand { get; set; }
@@ -42,7 +45,24 @@ namespace SimpleGmailClone.ViewModels
 
             await App.Current.MainPage.Navigation.PopAsync();
 
+            OpenExternalEmailApp();
             SendNotification();
+        }
+
+        private async void OpenExternalEmailApp()
+        {
+            var recipients = new List<string>() { To };
+            var attachments = new List<EmailAttachment>() { new EmailAttachment(_attachmentPath) };
+
+            var message = new EmailMessage
+            {
+                Subject = Subject,
+                Body = Body,
+                To = recipients,
+                Attachments = attachments,
+            };
+
+            await Xamarin.Essentials.Email.ComposeAsync(message);
         }
 
         private async void SendNotification()
@@ -67,6 +87,7 @@ namespace SimpleGmailClone.ViewModels
                 Title = "Please pick a photo"
             });
 
+            _attachmentPath = image.FullPath;
             _base64Image = Convert.ToBase64String(File.ReadAllBytes(image.FullPath));
 
             var imageStream = await image.OpenReadAsync();
