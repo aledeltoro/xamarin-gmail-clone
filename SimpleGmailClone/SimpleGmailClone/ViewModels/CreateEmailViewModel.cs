@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Plugin.LocalNotification;
 using SimpleGmailClone.Models;
 using System;
 using System.Collections.ObjectModel;
@@ -40,6 +41,23 @@ namespace SimpleGmailClone.ViewModels
             Preferences.Set("emails", jsonString);
 
             await App.Current.MainPage.Navigation.PopAsync();
+
+            SendNotification();
+        }
+
+        private async void SendNotification()
+        {
+            var notification = new NotificationRequest
+            {
+                Title = "Email status",
+                Description = "Email was sent successfully", 
+                Schedule =
+                {
+                    NotifyTime = DateTime.Now.AddSeconds(5),
+                }
+            };
+
+            await NotificationCenter.Current.Show(notification);
         }
 
         private async void AttachPhoto()
