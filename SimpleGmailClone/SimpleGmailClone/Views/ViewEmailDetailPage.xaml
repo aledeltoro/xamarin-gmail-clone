@@ -6,7 +6,7 @@
              x:Class="SimpleGmailClone.Views.ViewEmailDetailPage">
     <ContentPage.Content>
         <Grid
-            RowDefinitions="Auto, Auto, Auto, Auto"
+            RowDefinitions="Auto, Auto, Auto, Auto, Auto"
             ColumnDefinitions="Auto, Auto">
 
             <Label
@@ -40,6 +40,11 @@
                 Grid.Row="4"
                 Grid.ColumnSpan="2"
                 Text="{Binding SelectedEmail.Body}"/>
+
+            <Image
+                Grid.Row="5"
+                Grid.ColumnSpan="2"
+                Source="{Binding Attachment}"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

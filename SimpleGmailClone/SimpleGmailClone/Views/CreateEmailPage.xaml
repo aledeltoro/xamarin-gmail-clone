@@ -6,12 +6,13 @@
              x:Class="SimpleGmailClone.Views.CreateEmailPage"
              Title="Compose">
     <ContentPage.ToolbarItems>
+        <ToolbarItem Command="{Binding AttachPhotoCommand}" Text="Attach"/>
         <ToolbarItem Command="{Binding CreateEmailCommand}" Text="Create"/>
     </ContentPage.ToolbarItems>
     
     <ContentPage.Content>
         <Grid
-            RowDefinitions="Auto, Auto, Auto, Auto"
+            RowDefinitions="Auto, Auto, Auto, Auto, Auto"
             ColumnDefinitions="Auto, Auto">
 
             <Label
@@ -53,6 +54,11 @@
                 Placeholder="Compose email"
                 Keyboard="Text"
                 Text="{Binding Body}"/>
+
+            <Image 
+                Grid.Row="4"
+                Grid.ColumnSpan="5"
+                Source="{Binding Attachment}"/>
 
         </Grid>
     </ContentPage.Content>
