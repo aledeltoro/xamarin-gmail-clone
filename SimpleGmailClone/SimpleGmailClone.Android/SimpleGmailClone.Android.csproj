@@ -96,21 +96,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\icon_account_circle\res\drawable-hdpi\icon_account_circle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\icon_account_circle\res\drawable-mdpi\icon_account_circle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\icon_account_circle\res\drawable-xhdpi\icon_account_circle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\icon_account_circle\res\drawable-xxhdpi\icon_account_circle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\icon_account_circle\res\drawable-xxxhdpi\icon_account_circle.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\account_icon\res\drawable-hdpi\twotone_account_circle_black_18.png" />
   </ItemGroup>
   <ItemGroup>
@@ -682,6 +667,402 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-xxxhdpi\baseline_attachment_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable\baseline_mail_20.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable\baseline_mail_24.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-hdpi\baseline_mail_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-hdpi\baseline_mail_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-hdpi\baseline_mail_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-hdpi\baseline_mail_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-hdpi\baseline_mail_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-mdpi\baseline_mail_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-mdpi\baseline_mail_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-mdpi\baseline_mail_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-mdpi\baseline_mail_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-mdpi\baseline_mail_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-xhdpi\baseline_mail_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-xhdpi\baseline_mail_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-xhdpi\baseline_mail_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-xhdpi\baseline_mail_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-xhdpi\baseline_mail_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-xxhdpi\baseline_mail_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-xxhdpi\baseline_mail_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-xxhdpi\baseline_mail_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-xxhdpi\baseline_mail_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-xxhdpi\baseline_mail_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-xxxhdpi\baseline_mail_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-xxxhdpi\baseline_mail_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-xxxhdpi\baseline_mail_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-xxxhdpi\baseline_mail_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\mail-white-android\res\drawable-xxxhdpi\baseline_mail_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable\baseline_archive_20.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable\baseline_archive_24.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-hdpi\baseline_archive_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-hdpi\baseline_archive_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-hdpi\baseline_archive_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-hdpi\baseline_archive_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-hdpi\baseline_archive_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-mdpi\baseline_archive_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-mdpi\baseline_archive_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-mdpi\baseline_archive_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-mdpi\baseline_archive_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-mdpi\baseline_archive_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-xhdpi\baseline_archive_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-xhdpi\baseline_archive_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-xhdpi\baseline_archive_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-xhdpi\baseline_archive_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-xhdpi\baseline_archive_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-xxhdpi\baseline_archive_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-xxhdpi\baseline_archive_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-xxhdpi\baseline_archive_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-xxhdpi\baseline_archive_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-xxhdpi\baseline_archive_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-xxxhdpi\baseline_archive_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-xxxhdpi\baseline_archive_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-xxxhdpi\baseline_archive_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-xxxhdpi\baseline_archive_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\archive-white-android\res\drawable-xxxhdpi\baseline_archive_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable\outline_star_border_24.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-hdpi\outline_star_border_black_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-hdpi\outline_star_border_black_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-hdpi\outline_star_border_black_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-hdpi\outline_star_border_black_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-hdpi\outline_star_border_black_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-mdpi\outline_star_border_black_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-mdpi\outline_star_border_black_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-mdpi\outline_star_border_black_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-mdpi\outline_star_border_black_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-mdpi\outline_star_border_black_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-xhdpi\outline_star_border_black_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-xhdpi\outline_star_border_black_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-xhdpi\outline_star_border_black_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-xhdpi\outline_star_border_black_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-xhdpi\outline_star_border_black_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-xxhdpi\outline_star_border_black_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-xxhdpi\outline_star_border_black_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-xxhdpi\outline_star_border_black_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-xxhdpi\outline_star_border_black_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-xxhdpi\outline_star_border_black_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-xxxhdpi\outline_star_border_black_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-xxxhdpi\outline_star_border_black_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-xxxhdpi\outline_star_border_black_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-xxxhdpi\outline_star_border_black_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\star_border-black-android\res\drawable-xxxhdpi\outline_star_border_black_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable\outline_more_vert_24.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-hdpi\outline_more_vert_black_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-hdpi\outline_more_vert_black_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-hdpi\outline_more_vert_black_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-hdpi\outline_more_vert_black_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-hdpi\outline_more_vert_black_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-mdpi\outline_more_vert_black_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-mdpi\outline_more_vert_black_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-mdpi\outline_more_vert_black_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-mdpi\outline_more_vert_black_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-mdpi\outline_more_vert_black_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-xhdpi\outline_more_vert_black_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-xhdpi\outline_more_vert_black_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-xhdpi\outline_more_vert_black_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-xhdpi\outline_more_vert_black_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-xhdpi\outline_more_vert_black_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-xxhdpi\outline_more_vert_black_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-xxhdpi\outline_more_vert_black_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-xxhdpi\outline_more_vert_black_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-xxhdpi\outline_more_vert_black_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-xxhdpi\outline_more_vert_black_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-xxxhdpi\outline_more_vert_black_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-xxxhdpi\outline_more_vert_black_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-xxxhdpi\outline_more_vert_black_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-xxxhdpi\outline_more_vert_black_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\more_vert-black-android\res\drawable-xxxhdpi\outline_more_vert_black_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable\outline_reply_24.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-hdpi\outline_reply_black_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-hdpi\outline_reply_black_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-hdpi\outline_reply_black_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-hdpi\outline_reply_black_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-hdpi\outline_reply_black_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-mdpi\outline_reply_black_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-mdpi\outline_reply_black_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-mdpi\outline_reply_black_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-mdpi\outline_reply_black_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-mdpi\outline_reply_black_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-xhdpi\outline_reply_black_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-xhdpi\outline_reply_black_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-xhdpi\outline_reply_black_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-xhdpi\outline_reply_black_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-xhdpi\outline_reply_black_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-xxhdpi\outline_reply_black_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-xxhdpi\outline_reply_black_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-xxhdpi\outline_reply_black_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-xxhdpi\outline_reply_black_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-xxhdpi\outline_reply_black_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-xxxhdpi\outline_reply_black_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-xxxhdpi\outline_reply_black_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-xxxhdpi\outline_reply_black_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-xxxhdpi\outline_reply_black_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\reply-black-android\res\drawable-xxxhdpi\outline_reply_black_48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

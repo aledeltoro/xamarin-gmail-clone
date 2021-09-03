@@ -4,37 +4,83 @@
              xmlns:viewmodels="clr-namespace:SimpleGmailClone.ViewModels"
              x:DataType="viewmodels:ViewEmailDetailViewModel"
              x:Class="SimpleGmailClone.Views.ViewEmailDetailPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="baseline_archive_white_24.png"/>
+        <ToolbarItem IconImageSource="baseline_delete_white_24.png"/>
+        <ToolbarItem IconImageSource="baseline_mail_white_24.png" />
+        <ToolbarItem Order="Secondary"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <Grid
             RowDefinitions="Auto, Auto, Auto, Auto, Auto"
             ColumnDefinitions="Auto, Auto">
 
-            <Label
-                Grid.Row="0"
-                Grid.ColumnSpan="2"
-                Text="{Binding SelectedEmail.Subject}"
-                FontSize="Title"/>
+            <Frame Grid.Row="0" Grid.ColumnSpan="3" BackgroundColor="Transparent" BorderColor="LightGray">
+                <Grid
+                    ColumnDefinitions="Auto, Auto, Auto">
 
-            <Image
-                Grid.Row="1"
-                Grid.Column="0"
-                Grid.RowSpan="2"
-                Source="icon_account_circle"/>
+                    <Label
+                        Grid.Column="0"
+                        Text="{Binding SelectedEmail.Subject}"
+                        FontSize="Medium"
+                        TextColor="Black"/>
 
-            <Label
-                Grid.Row="1"
-                Grid.Column="1"
-                Text="{Binding SelectedEmail.From}"/>
+                    <Label
+                        Grid.Column="1"
+                        Text="Inbox"
+                        BackgroundColor="LightGray"
+                        Padding="5, 0"
+                        VerticalOptions="CenterAndExpand"
+                        />
 
-            <Label
-                Grid.Row="2"
-                Grid.Column="1"
-                Text="{Binding SelectedEmail.To}"/>
+                    <Image
+                        Grid.Column="5"
+                        Source="outline_star_border_black_18.png"
+                        />
+                </Grid>
+            </Frame>
 
-            <Label
-                Grid.Row="3"
-                Grid.Column="1"
-                Text="{Binding SelectedEmail.Date.DayOfWeek}"/>
+            <Frame Grid.Row="1" BackgroundColor="Red" Padding="5">
+                <Grid
+                    RowDefinitions="Auto, Auto, Auto"
+                    ColumnDefinitions="Auto, Auto, Auto, Auto">
+
+                    <Image
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Grid.RowSpan="3"
+                        Source="twotone_account_circle_black_48.png"/>
+
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        FontAttributes="Bold"
+                        FontSize="Caption"
+                        Text="{Binding SelectedEmail.From}"/>
+
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        FontSize="Caption"
+                        Text="{Binding SelectedEmail.To}"/>
+
+                    <Label
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        FontSize="Caption"
+                        Text="{Binding SelectedEmail.Date.DayOfWeek}"/>
+
+                    <Image
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Source="outline_reply_black_18.png"/>
+
+                    <Image
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Source="outline_more_vert_black_18.png"/>
+                </Grid>
+            </Frame>
 
             <Label
                 Grid.Row="4"
