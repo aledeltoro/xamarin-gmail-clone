@@ -30,6 +30,7 @@ namespace SimpleGmailClone.ViewModels
                 if (_selectedEmail != null)
                 {
                     SelectedEmailCommand.Execute(_selectedEmail);
+                    SelectedEmail = null;
                 }
             }
         }

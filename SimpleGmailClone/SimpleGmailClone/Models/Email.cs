@@ -7,7 +7,7 @@ namespace SimpleGmailClone.Models
 {
     public class Email : INotifyPropertyChanged
     {
-        public Email(string from, string to, string body, string subject = "(no subject)", string base64Image = null)
+        public Email(string from, string to, string body = null, string subject = "(no subject)", string base64Image = null)
         {
             Subject = subject;
             Body = body;

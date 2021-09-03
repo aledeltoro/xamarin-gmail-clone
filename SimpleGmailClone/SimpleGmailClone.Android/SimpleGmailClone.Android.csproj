@@ -500,5 +500,188 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\create-white-android\res\drawable-xxxhdpi\baseline_create_white_48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable\baseline_send_16.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable\baseline_send_20.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable\baseline_send_24.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-hdpi\baseline_send_white_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-hdpi\baseline_send_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-hdpi\baseline_send_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-hdpi\baseline_send_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-hdpi\baseline_send_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-hdpi\baseline_send_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-mdpi\baseline_send_white_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-mdpi\baseline_send_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-mdpi\baseline_send_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-mdpi\baseline_send_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-mdpi\baseline_send_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-mdpi\baseline_send_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-xhdpi\baseline_send_white_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-xhdpi\baseline_send_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-xhdpi\baseline_send_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-xhdpi\baseline_send_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-xhdpi\baseline_send_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-xhdpi\baseline_send_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-xxhdpi\baseline_send_white_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-xxhdpi\baseline_send_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-xxhdpi\baseline_send_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-xxhdpi\baseline_send_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-xxhdpi\baseline_send_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-xxhdpi\baseline_send_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-xxxhdpi\baseline_send_white_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-xxxhdpi\baseline_send_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-xxxhdpi\baseline_send_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-xxxhdpi\baseline_send_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-xxxhdpi\baseline_send_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\send-white-android\res\drawable-xxxhdpi\baseline_send_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable\baseline_attachment_18.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable\baseline_attachment_20.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable\baseline_attachment_24.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-hdpi\baseline_attachment_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-hdpi\baseline_attachment_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-hdpi\baseline_attachment_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-hdpi\baseline_attachment_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-hdpi\baseline_attachment_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-mdpi\baseline_attachment_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-mdpi\baseline_attachment_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-mdpi\baseline_attachment_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-mdpi\baseline_attachment_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-mdpi\baseline_attachment_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-xhdpi\baseline_attachment_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-xhdpi\baseline_attachment_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-xhdpi\baseline_attachment_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-xhdpi\baseline_attachment_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-xhdpi\baseline_attachment_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-xxhdpi\baseline_attachment_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-xxhdpi\baseline_attachment_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-xxhdpi\baseline_attachment_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-xxhdpi\baseline_attachment_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-xxhdpi\baseline_attachment_white_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-xxxhdpi\baseline_attachment_white_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-xxxhdpi\baseline_attachment_white_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-xxxhdpi\baseline_attachment_white_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-xxxhdpi\baseline_attachment_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\attachment-white-android\res\drawable-xxxhdpi\baseline_attachment_white_48.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

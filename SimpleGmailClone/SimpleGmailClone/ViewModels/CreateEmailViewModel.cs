@@ -20,7 +20,7 @@ namespace SimpleGmailClone.ViewModels
         public string From { get; set; }
         public string To { get; set; }
         public ImageSource Attachment { get; set; }
-        
+
         private string _base64Image { get; set; }
         private string _attachmentPath { get; set; }
 
@@ -37,6 +37,12 @@ namespace SimpleGmailClone.ViewModels
 
         private async void CreateEmail()
         {
+            if (areRequiredFieldsEmpty()) {
+                await App.Current.MainPage.DisplayAlert("Error", "Missing sender or receiver", "Ok");
+                
+                return;
+            }
+
             var newEmail = new Models.Email(From, To, Body, Subject, _base64Image);
             _emails.Add(newEmail);
 
@@ -47,6 +53,14 @@ namespace SimpleGmailClone.ViewModels
 
             OpenExternalEmailApp();
             SendNotification();
+        }
+
+        private bool areRequiredFieldsEmpty()
+        {
+            bool isSenderEmpty = string.IsNullOrEmpty(From);
+            bool isReceiverEmpty = string.IsNullOrEmpty(To);
+
+            return isSenderEmpty && isReceiverEmpty;
         }
 
         private async void OpenExternalEmailApp()
@@ -70,7 +84,7 @@ namespace SimpleGmailClone.ViewModels
             var notification = new NotificationRequest
             {
                 Title = "Email status",
-                Description = "Email was sent successfully", 
+                Description = "Email was sent successfully",
                 Schedule =
                 {
                     NotifyTime = DateTime.Now.AddSeconds(5),

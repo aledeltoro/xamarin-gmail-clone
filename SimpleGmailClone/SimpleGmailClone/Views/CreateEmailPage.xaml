@@ -6,8 +6,9 @@
              x:Class="SimpleGmailClone.Views.CreateEmailPage"
              Title="Compose">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Command="{Binding AttachPhotoCommand}" Text="Attach"/>
-        <ToolbarItem Command="{Binding CreateEmailCommand}" Text="Create"/>
+        <ToolbarItem Command="{Binding AttachPhotoCommand}" IconImageSource="baseline_attachment_white_24.png"/>
+        <ToolbarItem Command="{Binding CreateEmailCommand}" IconImageSource="baseline_send_white_24.png"/>
+        <ToolbarItem Order="Secondary" />
     </ContentPage.ToolbarItems>
     
     <ContentPage.Content>
@@ -18,7 +19,10 @@
             <Label
                 Grid.Row="0"
                 Grid.Column="0"
-                Text="From"/>
+                Text="From"
+                VerticalOptions="Center"
+                FontSize="Medium"
+                TextColor="Gray"/>
 
             <Entry
                 Grid.Row="0"
@@ -31,7 +35,10 @@
             <Label
                 Grid.Row="1"
                 Grid.Column="0"
-                Text="To"/>
+                Text="To"
+                FontSize="Medium"
+                VerticalOptions="Center"
+                TextColor="Gray"/>
 
             <Entry
                 Grid.Row="1"
@@ -46,19 +53,26 @@
                 Grid.ColumnSpan="5"
                 Placeholder="Subject"
                 Keyboard="Text"
-                Text="{Binding Subject}"/>
+                Text="{Binding Subject}"
+                PlaceholderColor="Gray"/>
+
+            <Image 
+                Grid.Row="3"
+                Grid.ColumnSpan="5"
+                Source="{Binding Attachment}"
+                WidthRequest="200"
+                HeightRequest="200"/>
 
             <Editor
-                Grid.Row="3"
+                Grid.Row="4"
+                Grid.RowSpan="4"
                 Grid.ColumnSpan="5"
                 Placeholder="Compose email"
                 Keyboard="Text"
-                Text="{Binding Body}"/>
-
-            <Image 
-                Grid.Row="4"
-                Grid.ColumnSpan="5"
-                Source="{Binding Attachment}"/>
+                Text="{Binding Body}"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                PlaceholderColor="Gray"/>
 
         </Grid>
     </ContentPage.Content>

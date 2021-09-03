@@ -14,10 +14,15 @@ namespace SimpleGmailClone.ViewModels
         {
             get
             {
-                var byteArray = Convert.FromBase64String(SelectedEmail.Base64Attachment);
-                var stream = new MemoryStream(byteArray);
+                if (SelectedEmail.Base64Attachment != null)
+                {
+                    var byteArray = Convert.FromBase64String(SelectedEmail.Base64Attachment);
+                    var stream = new MemoryStream(byteArray);
 
-                return ImageSource.FromStream(() => stream);
+                    return ImageSource.FromStream(() => stream);
+                }
+
+                return null;
             }
         }
 
