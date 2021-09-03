@@ -57,21 +57,19 @@
                 PlaceholderColor="Gray"/>
 
             <Image 
-                Grid.Row="3"
+                Grid.Row="4"
                 Grid.ColumnSpan="5"
                 Source="{Binding Attachment}"
                 WidthRequest="200"
                 HeightRequest="200"/>
 
             <Editor
-                Grid.Row="4"
-                Grid.RowSpan="4"
+                Grid.Row="3"
                 Grid.ColumnSpan="5"
                 Placeholder="Compose email"
                 Keyboard="Text"
                 Text="{Binding Body}"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand"
+                HeightRequest="200"
                 PlaceholderColor="Gray"/>
 
         </Grid>

@@ -64,8 +64,9 @@
                                     Grid.Row="0"
                                     Grid.Column="1"
                                     Text="{Binding From}"
-                                    FontSize="Medium"
-                                    TextColor="Black"/>
+                                    FontSize="Small"
+                                    TextColor="Black"
+                                    BackgroundColor="Red"/>
 
                                 <Label
                                     Grid.Row="1"
