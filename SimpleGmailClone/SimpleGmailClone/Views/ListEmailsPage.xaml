@@ -9,8 +9,25 @@
         <viewModels:ListEmailsViewModel/>
     </ContentPage.BindingContext>
 
-    <Grid
-        RowDefinitions="*, Auto">
+    <NavigationPage.TitleView>
+        <Grid ColumnDefinitions="Auto,6*,Auto" Padding="5">
+            <Image 
+                Grid.Column="0" 
+                Source="outline_reorder_white_24.png"/>
+            <Label 
+                Grid.Column="1" 
+                Text="Primary" 
+                TextColor="White" 
+                FontAttributes="Bold" 
+                FontSize="Large" 
+                HorizontalOptions="Center"/>
+            <Image 
+                Grid.Column="2" 
+                Source="outline_search_white_24.png"/>
+        </Grid>
+    </NavigationPage.TitleView>
+
+    <StackLayout>
 
         <CollectionView 
             Grid.Row="0"
@@ -23,41 +40,55 @@
                     <SwipeView>
                         <SwipeView.RightItems>
                             <SwipeItem 
-                                IconImageSource="icon_account_circle"
+                                IconImageSource="@baseline_delete_white_18.png"
                                 Command="{Binding Source={x:Reference EmailListPage}, Path=BindingContext.DeleteEmailCommand}"
                                 CommandParameter="{Binding}"
                                 IsDestructive="True"
                                 BackgroundColor="Red"/>
                         </SwipeView.RightItems>
-                        <Grid 
-                        RowDefinitions="Auto, Auto, Auto"
-                        ColumnDefinitions="Auto, Auto, Auto">
+                        <Frame
+                            BorderColor="LightGray"
+                            Padding="0">
+                            <Grid 
+                                RowDefinitions="Auto, Auto, Auto"
+                                ColumnDefinitions="Auto,Auto, Auto"
+                                Padding="10"
+                                RowSpacing="0">
 
-                            <Image 
-                            Grid.RowSpan="2"
-                            Grid.Column="0"
-                            Source="icon_account_circle"/>
+                                <Image 
+                                    Grid.RowSpan="3"
+                                    Grid.Column="0"
+                                    Source="twotone_account_circle_black_48.png"/>
 
-                            <Label
-                            Grid.Row="0"
-                            Grid.Column="1"
-                            Text="{Binding From}"/>
+                                <Label
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Text="{Binding From}"
+                                    FontSize="Medium"
+                                    TextColor="Black"/>
 
-                            <Label
-                            Grid.Row="1"
-                            Grid.Column="1"
-                            Text="{Binding Subject}"/>
+                                <Label
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Text="{Binding Subject}"
+                                    FontSize="Small"
+                                    TextColor="Black"/>
 
-                            <Label
-                            Grid.Row="2"
-                            Grid.Column="1"
-                            Text="{Binding Body}"/>
+                                <Label
+                                    Grid.Row="2"
+                                    Grid.Column="1"
+                                    Text="{Binding Body}"
+                                    FontSize="Small"
+                                    TextColor="Gray"/>
 
-                            <Label
-                            Grid.Row="0"
-                            Grid.Column="4"
-                            Text="{Binding Date.DayOfWeek}"/>
-                        </Grid>
+                                <Label
+                                    Grid.Row="0"
+                                    Grid.Column="4"
+                                    Text="{Binding Date.DayOfWeek}"
+                                    HorizontalOptions="End"
+                                    TextColor="Gray"/>
+                            </Grid>
+                        </Frame>
                     </SwipeView>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
@@ -65,23 +96,24 @@
                 <Grid>
                     <Label
                         Text="No Items"
+                        FontSize="Medium"
                         HorizontalOptions="Center"
                         VerticalOptions="Center"/>
                 </Grid>
             </CollectionView.EmptyView>
         </CollectionView>
 
-        <ImageButton 
-            Grid.Row="1"
-            Source="icon_account_circle"
-            CornerRadius="20"
-            WidthRequest="80"
-            HeightRequest="80"  
-            VerticalOptions="End"
+        <Button
+            ImageSource="baseline_create_white_24.png"
+            BackgroundColor="#EA4335"
+            WidthRequest="60"
+            HeightRequest="60"
+            CornerRadius="30"
             HorizontalOptions="End"
-            Command="{Binding NavigateToCreateEmailCommand}"
-            />
-    </Grid>
+            Margin="20"
+            Command="{Binding NavigateToCreateEmailCommand}"/>
+        
+    </StackLayout>
 
 
 </ContentPage>
